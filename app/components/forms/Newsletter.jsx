@@ -53,7 +53,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="relative z-10 px-6 pb-20">
+    <section className="relative z-10 px-6 pb-20 bg-[#19262C]">
       <div className="max-w-5xl mx-auto text-center">
         <h3 className="text-white text-[22px] sm:text-[28px] md:text-[44px] font-light">
           Stay informed about Amaya
