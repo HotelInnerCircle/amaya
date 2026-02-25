@@ -67,7 +67,7 @@ const EmailLeads = () => {
         info.row.index +
         1 +
         info.table.getState().pagination.pageIndex *
-          info.table.getState().pagination.pageSize,
+        info.table.getState().pagination.pageSize,
     },
     columnHelper.accessor('email', {
       header: 'Email Address',

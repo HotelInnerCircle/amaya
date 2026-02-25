@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { createMRTColumnHelper } from 'material-react-table';
 import toast from 'react-hot-toast';
-import EnqTable from '../dashboard/EnqTable';
+import EnqTable from '../../../admin/dashboard/EnqTable';
 
 
 const Arena = () => {
