@@ -68,9 +68,12 @@ export default function Page() {
           paper. Pre-launch access is limited.
         </p>
         <div className=' mt-2 flex flex-col sm:flex-row items-center justify-center gap-3'>
-          <button className='p-8 sm:w-auto rounded-full bg-[#3f5a4d]  py-2 text-[12px]  uppercase text-white hover:bg-[#2f463c] transition'>
+          <a
+            href="#form"
+            className="p-8 sm:w-auto rounded-full bg-[#3f5a4d] py-2 text-[12px] uppercase text-white hover:bg-[#2f463c] transition"
+          >
             REQUEST A PRIVATE PREVIEW
-          </button>
+          </a>
 
           {/* <button className="md:px-20 sm:w-auto hover:bg-[#3D473E] rounded-full bg-white/70 border border-black/20 px-3 py-2 text-[13px] tracking-[0.15em] uppercase text-black  hover:text-white transition">
             CONTACT US

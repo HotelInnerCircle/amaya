@@ -49,13 +49,18 @@ export async function GET() {
     const contacts = await Contact.find().sort({ createdAt: -1 });
 
     return NextResponse.json(
-      { success: true, count: contacts.length, contacts },
-      { status: 200 },
+      {
+        success: true,
+        count: contacts.length,
+        data: contacts, // ✅ KEY FIX
+      },
+      { status: 200 }
     );
   } catch (error) {
+    console.error('GET /api/contact error:', error);
     return NextResponse.json(
       { success: false, message: 'Server error' },
-      { status: 500 },
+      { status: 500 }
     );
   }
 }

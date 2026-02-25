@@ -68,7 +68,7 @@ export default function Form() {
   };
 
   return (
-    <section className="relative z-10 px-6 pt-10 md:pt-20 pb-24">
+    <section className="relative z-10 px-6 pt-10 md:pt-20 pb-24" id="form">
       <div className="max-w-6xl mx-auto">
         <form
           onSubmit={handleSubmit}

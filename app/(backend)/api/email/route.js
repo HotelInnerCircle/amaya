@@ -46,10 +46,15 @@ export async function GET() {
     const emails = await Email.find().sort({ createdAt: -1 });
 
     return NextResponse.json(
-      { success: true, count: emails.length, emails },
+      {
+        success: true,
+        count: emails.length,
+        data: emails, // ✅ IMPORTANT
+      },
       { status: 200 }
     );
   } catch (error) {
+    console.error("GET /api/email error:", error);
     return NextResponse.json(
       { success: false, message: "Server error" },
       { status: 500 }
