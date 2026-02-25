@@ -5,7 +5,7 @@ import Newsletter from './components/forms/Newsletter';
 
 export default function Page() {
   return (
-    <main className='relative min-h-screen w-full overflow-hidden '>
+    <main className='relative min-h-screen w-full  '>
       {/* Background Image */}
       <div className='absolute inset-0 -z-10 mb-240 md:mb-100 xl:-mb-90 sm:mb-260 lg:mb-30 2xl:-mb-140'>
         <Image
@@ -68,10 +68,13 @@ export default function Page() {
           paper. Pre-launch access is limited.
         </p>
         <div className=' mt-2 flex flex-col sm:flex-row items-center justify-center gap-3'>
-          <a
+          {/* <a
             href="#form"
             className="p-8 sm:w-auto rounded-full bg-[#3f5a4d] py-2 text-[12px] uppercase text-white hover:bg-[#2f463c] transition"
           >
+            REQUEST A PRIVATE PREVIEW
+          </a> */}
+                    <a href="#form" className='p-8 sm:w-auto rounded-full bg-[#3f5a4d]  py-2 text-[12px]  uppercase text-white hover:bg-[#2f463c] transition'>
             REQUEST A PRIVATE PREVIEW
           </a>
 
