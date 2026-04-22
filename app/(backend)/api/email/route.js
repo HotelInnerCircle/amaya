@@ -44,7 +44,7 @@ export async function POST(req) {
     // ✅ SEND LEAD TO ADMIN (YOU)
     await transporter.sendMail({
       from: `"Amaya Leads" <${process.env.EMAIL_USER}>`,
-      to: process.env.ADMIN_EMAIL, // your email
+      to: process.env.EMAIL, // your email
       subject: "🚀 New Lead - Amaya",
       html: `
     <div style="font-family:Arial;padding:20px;">
