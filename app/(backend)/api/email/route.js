@@ -48,7 +48,6 @@ export async function POST(req) {
       subject: "🚀 New Lead - Amaya",
       html: `
     <div style="font-family:Arial;padding:20px;">
-      <h2>New Lead Received 🔥</h2>
       <p><strong>Email:</strong> ${email}</p>
       <p>A new user has subscribed to your newsletter.</p>
     </div>
