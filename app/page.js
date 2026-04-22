@@ -74,7 +74,7 @@ export default function Page() {
           >
             REQUEST A PRIVATE PREVIEW
           </a> */}
-                    <a href="#form" className='p-8 sm:w-auto rounded-full bg-[#3f5a4d]  py-2 text-[12px]  uppercase text-white hover:bg-[#2f463c] transition'>
+          <a href="#form" className='p-8 sm:w-auto rounded-full bg-[#3f5a4d]  py-2 text-[12px]  uppercase text-white hover:bg-[#2f463c] transition'>
             REQUEST A PRIVATE PREVIEW
           </a>
 

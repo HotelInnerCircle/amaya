@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import Email from "../../../../lib//models/email";
 import { ConnectDB } from "../../../../lib/config/db";
-
+import nodemailer from "nodemailer";
 /* ✅ POST: Save email */
 export async function POST(req) {
   try {
@@ -27,13 +27,42 @@ export async function POST(req) {
       );
     }
 
+    // ✅ Save email
     await Email.create({ email });
 
+
+
+    // ✅ SEND AUTO EMAIL
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS, // app password
+      },
+    });
+
+    // ✅ SEND LEAD TO ADMIN (YOU)
+    await transporter.sendMail({
+      from: `"Amaya Leads" <${process.env.EMAIL_USER}>`,
+      to: process.env.ADMIN_EMAIL, // your email
+      subject: "🚀 New Lead - Amaya",
+      html: `
+    <div style="font-family:Arial;padding:20px;">
+      <h2>New Lead Received 🔥</h2>
+      <p><strong>Email:</strong> ${email}</p>
+      <p>A new user has subscribed to your newsletter.</p>
+    </div>
+  `,
+    });
+
+
+
     return NextResponse.json(
-      { message: "Email saved successfully" },
+      { message: "Email saved & mail sent successfully" },
       { status: 200 }
     );
   } catch (error) {
+    console.error(error);
     return NextResponse.json({ message: "Server error" }, { status: 500 });
   }
 }
