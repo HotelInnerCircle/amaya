@@ -12,33 +12,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: 'Amaya Real Estate | Buy, Sell & Rent Properties',
+  title: 'Amaya Real Estate | Homes Designed for Senior Living',
   description:
-    'Amaya Real Estate helps you buy, sell, and rent residential & commercial properties with trusted service, best deals, and verified listings.',
+    'Amaya Real Estate helps you find and buy residential and commercial properties with verified listings, trusted service, and the best deals.',
   keywords:
-    'Amaya Real Estate, properties for sale, properties for rent, buy house, rent house, commercial property, residential property, real estate agency',
+    'Amaya Real Estate, buy senior living homes, retirement homes, senior citizen housing, assisted living homes, buy retirement property',
   openGraph: {
-    title: 'Amaya Real Estate | Buy, Sell & Rent Properties',
+    title: "Amaya Real Estate | Buy Your Dream Property",
     description:
-      'Buy, sell, and rent properties with Amaya Real Estate. Verified listings and best deals for residential & commercial properties.',
+      "Discover and buy residential and commercial properties with Amaya Real Estate. Verified listings, trusted service, and the best deals.",
 
-    siteName: 'Amaya Real Estate',
+    siteName: "Amaya Real Estate",
     images: [
       {
-        url: '/assests/Amaya_Logo_Final_copy.png',
+        url: "/assests/Amaya_Logo_Final_copy.png",
         width: 1200,
         height: 630,
-        alt: 'Amaya Real Estate Logo',
+        alt: "Amaya Real Estate - Buy Property",
       },
     ],
-    type: 'website',
+    type: "website",
   },
+
   twitter: {
-    card: 'summary_large_image',
-    title: 'Amaya Real Estate | Buy, Sell & Rent Properties',
+    card: "summary_large_image",
+    title: "Amaya Real Estate | Buy Your Dream Property",
     description:
-      'Find your dream property with Amaya Real Estate. Verified listings for sale & rent.',
-    images: ['/assests/Amaya_Logo_Final.png'],
+      "Find and buy your dream property with Amaya Real Estate. Explore verified residential and commercial listings.",
+    images: ["/assests/Amaya_Logo_Final.png"],
   },
 };
 
